@@ -1,106 +1,128 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8°">
-        <neta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">  
-        <link rel="stylesheet" href="./fontawesome-all.css">
-        <link rel="stylesheet" href="./responsive.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
-        <title>New Portfolio Web Site</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <h2><a href="#">Oğuzhan Ağılönü</a></h2>
-                </div>
-                <ul class="nav_links">
-                    <li><a href="#anasayfa">Anasayfa</a></li>
-                    <li><a href="#yetenekler">Yetenekler</a></li>
-                    <li><a href="#hakkimda">Hakkımda</a></li>
-                    <li><a href="#iletisim">İletişim</a></li>
-                </ul>
-            </nav>
-            <div id="menu_bar">
-                <i class="fas fa-bars"></i>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Odev</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">OĞUZHAN AĞILÖNÜ</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul id="sidebar">
+          <li><a href="#anasayfa">ANA SAYFA</a></li>
+          <li><a href="#hakkimda">HAKKIMDA</a></li>
+          <li><a href="#iletisim">İLETİŞİM</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="anasayfam" id="anasayfa">
+      <div class="anasayfa__container">
+        <div class="content">
+          <p class="subtitle">MERHABA</p>
+          <h1 class="title">
+            Ben <span>Oğuzhan<br /></span> Web Sayfama Hoş Geldiniz!        </h1>
+            <a class="btn" href="cv.pdf" download="cv.pdf">CV'mi indir</a>
+          <p class="description">
+           
+           
+           
+        </div>
+        <div class="image">
+          <img src="main.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="hakkimda" id="hakkimda">
+      <div class="hakkimda-container">
+        <div class="hakkimda">
+          <div class="hakkimda1">
+            <h1 class="baslik">Hakkımda</h1>
+            Ben Oğuzhan AĞILÖNÜ. 23 Ocak 2003 tarihinde Denizli'de doğdum. Üniversiteye kadar olan eğitimimi Denzili'de tamamladım. Bu süreçte sporlarla ilgilenerek basketbol takımlarında yer aldım. Okul takım kaptanlığı gibi görevleri üstlenerek çeşitli sorumluluklar aldım ve kendimi liderlik, takım çalışması konularında geliştirdim. Ayrıca BTK Akademi'den de Etkili İletişim sertifikam buunmakta. Üniversite eğitimimi Süleyman Demirel Üniversitesi Bilgisayar Mühendsiliği bölümünde devam ettirmekteyim. İlk stajımı Aselsis isimli yazılım ve elektronik ile uğraşmakta olan bir şirkette yaptım. Java, c#, python dilleri ile ilgilenmekteyim ancak react üzerine eğitimler almaktayım. 
+             Kısaca size bu tablo ile tecrübelerimi sunabilirim:
+            <div class="tecrubeler">
+              <div class="skill">
+                <p class="javascripttext">Java</p>
+                <img class="bar1" src="100bar.png" />
+              </div>
+              <div class="skill2">
+                <p>Python</p>
+                <img class="bar2" src="90bar.png" />
+              </div>
+              <div class="skill3">
+                <p>c#</p>
+                <img class="bar3" src="90bar.png" />
+              </div>
+            </div>
+          </div>
+          <img class="galaxy" src="rsm.png" />
+        </div>
+      </div>
+    </section>
 
-            </div>
-        </header>
-        <!-- ANASAYFA-->
-       <section id="anasayfa">
-        <div class="inner_anasayfa">
-            <div class="child_ansayfa">
-                <h1>MERHABA BEN OĞUZHAN <span class="span_child">WEB SİTEME HOŞ GELDİNİZ!</span></h1>
-                <p>Benimle ilgili bilgileri burada bulabilirsiniz.</p>
-                <a class="btn" href="cv/cv.pdf" download="cv.pdf">CV'mi indir</a>
-            </div>
-            <div class="child_ansayfa">
-               <img src="./main.jpg">
-            </div>
-        </div>
-       </section>
-       <!--YETENEKLER-->
-       <section id="yetenekler">
-        <div class="section_title">
-            <h2>YETENEKLER</h2>
-        </div>
-        <div class="innersoftware">
-            <div class="innersoftware_child">
-                <div class="icon">
-                   <i class="fas fa-laptop"></i>
-                </div>
-                <h3>HTML & CSS</h3>
-                <P>HTML ve CSS ile istediğiniz tarzda web siteleri yapabilirim</P>
-             </div>
-             <div class="innersoftware_child">
-                <div class="icon">
-                   <i class="fas fa-laptop"></i>
-                </div>
-                <h3>PYTHON</h3>
-                <P>Tüm masaüstü yazılımlar ve zor işler için python kullanıyorum.</P>
-            </div>
-            <div class="innersoftware_child">
-                <div class="icon">
-                   <i class="fas fa-laptop"></i>
-                </div>
-                <h3>JAVA</h3>
-                <P> Java proglamlamanın temelidir. Nesneye yönelik programlama için olmazsa olmazdır.</P>
+    <section class="iletisim" id="iletisim">
+      <div class="genel">
+      <div class="contact-form">
+        <h2>İletişim Formu</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">İsim-Soyisim:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon Numarası:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Gönder</button>
+        </form>
+      </div>     
+    </div> 
+  </div>
+    </section>
+    <div class="footer">
+      <p>Created by Oğuzhan Ağılönü | Tüm Bilgiler koruma altındadır ©</p>
+  </div>
 
-            </div>
-        </div>
-    </section>
-    <!--HAKKIMDA-->
-    <section id="hakkimda">
-        <div class="section_title">
-            <h2>HAKKIMDA</h2>
-        </div>
-        <div >
-            <p>
-                Ben Oğuzhan AĞILÖNÜ. 23 Ocak 2003 tarihinde Denizli'de doğdum. Üniversiteye kadar olan eğitimimi Denzili'de tamamladım. Bu süreçte sporlarla ilgilenerek basketbol takımlarında yer aldım. Okul takım kaptanlığı gibi görevleri üstlenerek çeşitli sorumluluklar aldım ve kendimi liderlik, takım çalışması konularında geliştirdim. Ayrıca BTK Akademi'den de Etkili İletişim sertifikam buunmakta. Üniversite eğitimimi Süleyman Demirel Üniversitesi Bilgisayar Mühendsiliği bölümünde devam ettirmekteyim. İlk stajımı Aselsis isimli yazılım ve elektronik ile uğraşmakta olan bir şirkette yaptım.
-            </p>
-        </div>
 
-    </section>
-    <!--İletişim-->
-    <section id="iletisim">
-        <div class="section_title">
-            <h2>İletişime Geç</h2>
-        </div>
-    </section>
-    <div class="inner_contact">
-        
-        <div class="child_contact">
-            <form action="#">
-                <input placeholder="isim" type="text" name="fullname" id="">
-                <input placeholder="Email" type="email" name="fullname" id="">
-                <input placeholder="Tel" type="pnone" name="fullname" id="">
-                <textarea placeholder="Mesaj" name="message" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Gönder">
-            </form>
-        </div>
-        </div>
-    </section>
-    </body>
-    </html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var links = document.querySelectorAll('ul li a');
+
+  links.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetId = this.getAttribute('href').substring(1);
+      var targetElement = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+
+
+</script>
+
+  
+  </body>
+</html>
